@@ -1,8 +1,9 @@
+
 import 'package:ecommers/presentation/ui/utils/asset_path.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
 import '../widgets/appbar_iconbutton.dart';
+import '../widgets/banner_slider.dart';
 import '../widgets/search_bar.dart';
 
 
@@ -24,7 +25,10 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           children: [
             const SizedBox(height: 16,),
-            SearchInputTextField(textEditingController: _searchbarController,)
+            SearchInputTextField(textEditingController: _searchbarController,),
+            SizedBox(height: 16,),
+            BannerSlider(),
+
           ],
         ),
       ),
@@ -46,6 +50,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
+
 
 
 
